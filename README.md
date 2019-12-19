@@ -9,7 +9,7 @@
 3. Generate .ENV file<br>
 `adonis key:generate`
 
-#DB
+# DB
 
 4. Configure DB connection in .ENV file
 
