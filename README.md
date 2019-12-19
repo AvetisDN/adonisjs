@@ -9,12 +9,15 @@
 3. Generate .ENV file<br>
 `adonis key:generate`
 
+4. Install modules<br>
+`npm install`
+
 # DB
 
-4. Configure DB connection in .ENV file
+1. Configure DB connection in .ENV file
 
-5. Run migrations<br>
+2. Run migrations<br>
 `adonis migration:run`
 
-6. Seeding DB data<br>
+3. Seeding DB data<br>
 `adonis seed`
