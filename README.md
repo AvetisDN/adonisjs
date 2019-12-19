@@ -15,8 +15,11 @@
 
 1. Configure DB connection in .ENV file
 
-2. Run migrations<br>
+2. Install DB module (e.g. mysql)
+`npm install mysql --save`
+
+3. Run migrations<br>
 `adonis migration:run`
 
-3. Seeding DB data<br>
+4. Seeding DB data<br>
 `adonis seed`
