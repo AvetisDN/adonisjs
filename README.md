@@ -1,4 +1,4 @@
-#Installation
+# Installation
 
 1. Install Adonis<br>
 `npm i -g @adonisjs/cli`
@@ -9,7 +9,7 @@
 3. Generate .ENV file<br>
 `adonis key:generate`
 
-#############################################################
+#DB
 
 4. Configure DB connection in .ENV file
 
