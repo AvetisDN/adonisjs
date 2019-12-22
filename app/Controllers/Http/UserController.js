@@ -15,6 +15,7 @@ class UserController {
       console.error(error)
     }
   }
+
   async show({request, params, response}) {
     try {
       const user = await User.find(params.id)
@@ -81,6 +82,30 @@ class UserController {
   async delete({request, params, response}) {
     try {
 
+    }
+    catch (error) {
+      console.error(error)
+    }
+  }
+
+  async login({request, response, auth}) {
+    const { email, password } = request.only(["email", "password"]);
+    try{
+      const user = await auth.attempt(email, password);
+      response.json({
+        user
+      })
+    }
+    catch (error) {
+      console.error(error)
+    }
+  }
+
+  async logout({request, response, auth}) {
+    try{
+      if (await auth.logout()) {
+        return true;
+      }
     }
     catch (error) {
       console.error(error)
